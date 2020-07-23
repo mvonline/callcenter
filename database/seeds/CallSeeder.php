@@ -12,6 +12,6 @@ class CallSeeder extends Seeder
     public function run()
     {
         $count = 100;
-        factory(\App\calls::class, $count)->create();
+        factory(\App\Call::class, $count)->create();
     }
 }

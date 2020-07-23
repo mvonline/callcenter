@@ -2,10 +2,11 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+use App\Agent;
 use Faker\Generator as Faker;
 
-$factory->define(\App\Call::class, function (Faker $faker) {
+$factory->define(Agent::class, function ($position) {
     return [
-        'callerID' => $faker->phoneNumber,
+        'position' => $position,
     ];
 });
